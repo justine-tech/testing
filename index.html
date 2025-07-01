@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> t4n0nG K0 l4nG </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<style>
+    body{
+        background: pink;
+    }
+    .myes{
+        overflow: hidden;
+        animation: 1s mmyes infinite;
+    }.bg-pink{
+        background: pink;
+        box-shadow: 1px 10px 10px black;
+        border-radius: 5%;
+    }.mnoo{
+        background: #7f8c8d;
+        box-shadow: 1px 10px 10px black;
+        border-radius: 5%;
+    }.cshadow{
+        box-shadow: 1px 10px 10px black;
+        border-radius: 5%;
+    }
+    @keyframes mmyes{
+        0%{
+            transform: scale(0.8);
+        }50%{
+            transform: scale(1);
+        }100%{
+            transform: scale(0.8);
+        }
+    }.myes2{
+        overflow: hidden;
+        animation: 8s mmyes2 ease-in;
+    }@keyframes mmyes2{
+        0%{
+            transform: translateY(-800px);
+        }50%{
+            transform: translateX(500px);
+        }80%{
+            transform: scale(0.5);
+        }
+        100%{
+            transform: scale(1);
+        }
+    }@keyframes mno2{
+        0%{
+            transform: translateY(-800px);
+        }50%{
+            transform: translateX(500px);
+        }80%{
+            transform: scale(0.5);
+        }
+        100%{
+            transform: scale(1);
+        }
+    }
+    
+    .mno{
+        overflow: hidden;
+        animation: 2s mmyes infinite;
+    }.mno2{
+        overflow: hidden;
+        animation: 2s mno2 ease-in;
+    }
+</style>
+<body>
+    <div class="container d-flex justify-content-center text-center">
+        <div class="row mt-5">
+            <div class="col-md-12 mt-5">
+                <div class="card p-5 text-center border-5 border-dark cshadow mt-5">
+                    <p class="lead fw-bold fs-2  text-muted text-center" style="text-align: justify;"><small>
+                    Hi There. <br>I Have A Question <br><br> 
+                    </small>Do you love me ? 😢</p>
+                    <div class="card-body m-0">
+                        <div class="card-title">
+                            <button class="btn btn-primary btn-lg mx-2" id="myes" data-bs-toggle="modal" data-bs-target="#manswer"> Yes </button>
+                            or
+                            <button class="btn btn-primary btn-lg mx-2" id="mmno" data-bs-toggle="modal" data-bs-target="#mignore"> No </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12 mt-5">
+                <div class="modal" id="manswer">
+                                <div class="modal-dialog modal-dialog-centered border-0">
+                                    <div class="modal-content bg-pink">
+                                        <div class="modal-body mb-1">
+                                            <button class="btn btn-close float-end" id="clos" data-bs-dismiss="modal"></button>
+                                            <p class="myes lead text-muted fw-bold mt-5 text-capitalize fst-italic" style="text-align: justify;">!K4W N4 nG4                                             4Ng h!n4h4n4p nG PüS0                                             4Ng s!y4nG M4Gb!b!g4y nG S4Y4, Ng t4m!s                                             4T L4Mb!nG S4 büh4y k0, w0hH H0H W0Hh                                             !K4W N4 nG4                                             4Ng b4w4t p4n4g!n!p k0                                             S4 p!l!nG M0'y n4gK4...
+                                            </p>
+                                            <p class="myes2 lead text-muted fw-bold mt-5" style="text-align: justify;"><small class="fst-italic"> ! l0v3 Y0ü </small><small>😘😘 !!</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="modal" id="mignore">
+                                <div class="modal-dialog modal-dialog-centered border-0">
+                                    <div class="modal-content mnoo">
+                                        <div class="modal-body">
+                                            <button class="btn btn-close float-end" id="clos1" data-bs-dismiss="modal"></button>
+                                            <div class="mno2 h2 my-5 " style="color: #1c1c1c;">  Bakit Nga ba? 😭 </div>
+                                            <p class="mno px-4 lead fw-bold mt-5 text-capitalize fst-italic" style="text-align: justify; color: #1c1c1c;">Bakit nga ba mahal kita
+                                            Kahit 'di pinapansin ang damdamin ko?
+                                            'Di mo man ako mahal
+                                            Ito pa rin ako, nagmamahal nang tapat sa 'yo
+                                            Bakit nga ba mahal kita
+                                            Kahit na may mahal ka mang iba?
+                                            Ba't baliw na baliw ako sa 'yo?
+                                            Hanggang kailan ako magtitiis?
+                                            Oh, bakit nga ba mahal kita?</p>
+                                            
+
+                                            
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        <audio src="y1.mp3" id="mmusic"></audio>
+                        <audio src="n1.mp3" id="mmusic1"></audio>
+                        <script>
+                            let myes = document.getElementById("myes");
+                            let mmno = document.getElementById("mmno");
+                            let mmusic = document.getElementById("mmusic");
+                            
+                            let n1 = document.getElementById("n1");
+                            myes.onclick = function(){
+                                mmusic.currentTime = 28;
+                                mmusic.play();
+                                mmusic1.pause();
+                                mmusic1.currentTime = 0;
+                                
+                            }
+                            
+                            let mmusic1 = document.getElementById("mmusic1");
+                            mmno.onclick = function(){
+                                mmusic1.play();
+                                mmusic.pause();
+                                mmusic.currentTime = 0;
+                            }
+                            
+                            let clos = document.getElementById("clos");
+                            clos.onclick = function(){
+                                mmusic.pause();
+                                mmusic.currentTime = 0;
+                            }
+                            let clos1 = document.getElementById("clos1");
+                            
+                            clos1.onclick = function(){
+                                mmusic1.pause();
+                                mmusic1.currentTime = 0;
+                            }
+
+                        </script>
+
+
+                        </div>
+                    </div>
+            </div>
+
+
+        </div>
+    </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</html>
